@@ -1,0 +1,7 @@
+<!doctype html><html><head><title>Sample Login</title></head><body>
+<form id="f"><label>Email <input type="email" name="email" required></label>
+<label>Password <input type="password" name="password" required></label>
+<button type="submit">Sign in</button></form><p role="alert" id="msg"></p>
+<script>document.getElementById('f').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);
+document.getElementById('msg').textContent=d.get('password')==='correct-horse'?'Welcome, '+d.get('email'):'Invalid email or password';};</script>
+</body></html>

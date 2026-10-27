@@ -1,0 +1,22 @@
+{
+  "name": "playwright-qa",
+  "version": "1.0.0",
+  "description": "Playwright Test suite (TypeScript, Page Object Model)",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "http-server": "^14.1.1"
+  },
+  "private": true
+}
